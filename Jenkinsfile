@@ -6,7 +6,7 @@ pipeline {
             steps {
                 // Checkout code from GitHub
                 git branch: 'main', 
-                    url: 'https://github.com/rabiicheffi/jenkinsAtelier.git',
+                    url: 'https://github.com/rabiicheffi/jenkinsAtelier.git'
             }
         }
 

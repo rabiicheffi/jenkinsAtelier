@@ -7,7 +7,6 @@ pipeline {
                 // Checkout code from GitHub
                 git branch: 'main', 
                     url: 'https://github.com/rabiicheffi/jenkinsAtelier.git',
-                    credentialsId: 'jenkins-example-github-pat'
             }
         }
 

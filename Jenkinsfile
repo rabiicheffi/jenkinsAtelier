@@ -21,12 +21,13 @@ pipeline {
         }
 
 	stage('MVN SONARQUBE') {
-	    steps {
-		sh 'mvn sonar:sonar'
-	    }
+    steps {
+        withSonarQubeEnv('http://192.168.33.10:9000') { 
+            sh 'mvn clean install sonar:sonar -DskipTests'
         }
-
     }
+}
+}
 
     post {
         success {
